@@ -34,6 +34,7 @@
             <div class="mb-3">
                 <label for="sampul" class="form-label">Sampul</label>
                 <input type="file" id="sampul" name="sampul" class="form-control" accept="image/*">
+                <div class="form-text">Format JPG, JPEG, atau PNG. Maksimal 5 MB.</div>
             </div>
 
             <button type="submit" class="btn btn-primary">Simpan</button>

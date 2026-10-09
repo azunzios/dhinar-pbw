@@ -44,6 +44,7 @@
                 @endif
 
                 <input type="file" id="sampul" name="sampul" class="form-control" accept="image/*">
+                <div class="form-text">Format JPG, JPEG, atau PNG. Maksimal 5 MB.</div>
                 <div class="form-text">Kosongkan jika tidak ingin mengganti sampul.</div>
             </div>
 

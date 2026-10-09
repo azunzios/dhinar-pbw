@@ -23,7 +23,9 @@ class PublikasiController extends Controller
         $request->validate([
             'judul'         => 'required|string|max:255',
             'tanggal_rilis' => 'required|date',
-            'sampul'        => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'sampul'        => 'nullable|image|mimes:jpg,jpeg,png|max:5120',
+        ], [
+            'sampul.max' => 'Ukuran sampul maksimal 5 MB.',
         ]);
 
         $namaFile = null;
@@ -53,7 +55,9 @@ class PublikasiController extends Controller
         $request->validate([
             'judul'         => 'required|string|max:255',
             'tanggal_rilis' => 'required|date',
-            'sampul'        => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'sampul'        => 'nullable|image|mimes:jpg,jpeg,png|max:5120',
+        ], [
+            'sampul.max' => 'Ukuran sampul maksimal 5 MB.',
         ]);
 
         $namaFile = $publikasi->sampul;
